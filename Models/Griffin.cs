@@ -14,13 +14,13 @@ public class Griffin : Animal
     public Griffin(string name) : base(name) { }
 
 
-    public override void Move()
+    public override void Moove()
     {
-        Console.WriteLine($"{Name} soars through the air!");
+        Console.WriteLine($"{Name} vole de ses propres ailes !");
     }
 
     public override void Sleep()
     {
-        Console.WriteLine($"{Name} perches on a high cliff to rest.");
+        Console.WriteLine($"{Name} est perché !");
     }
 }

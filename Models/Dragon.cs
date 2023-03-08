@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleAppAnimals.Interfaces;
 
 namespace ConsoleAppAnimals.Models;
 
-public class Dragon : Animal
+public class Dragon : Animal, IPilotage
 {
     public Dragon() : base() { }
 
     public Dragon(string name) : base(name) { }
 
-    public override void Move()
+    public override void Moove()
     {
-        Console.WriteLine($"{Name} Fly !");
+        Console.WriteLine($"{Name} vole de ses propres ailes !");
     }
 
     public override void Sleep()
     {
-        Console.WriteLine($"{Name} rests on a bed of hot coals.");
+        Console.WriteLine($"{Name} se repose en haut de son donjon.");
     }
 }

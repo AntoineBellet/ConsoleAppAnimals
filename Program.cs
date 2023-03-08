@@ -16,11 +16,23 @@ class Program
         Dragon dragon = new Dragon("Bastien");
         Dragon dragon1 = new Dragon();
 
-        dragon.Move();
-        dragon1.Sleep();
+        
 
-        griffin1.Sleep();
-        griffin.Move();
+        List<Chien> listeChiens = new List<Chien>()
+{
+            new Chien("Rex"),
+            new Chien("Max"),
+            new Chien("Bella"),
+            new Chien("Charlie"),
+            new Chien("Snow")
+};
+        var chiens = listeChiens.Where(chien => chien.Name != "Snow").Select(chien => chien.Name);
+        foreach (var nomChien in chiens)
+        {
+            Console.WriteLine(nomChien);
+        }
+
+
     }
 
 }
