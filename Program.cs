@@ -9,13 +9,18 @@ class Program
 
     static void Main(string[] args)
     {
-        Animal animal1 = new Animal();         
-        Animal animal2 = new Animal();
+        Griffin griffin = new Griffin("Tz"); 
+        Griffin griffin1 = new Griffin("Lukas"); 
+        
+        
+        Dragon dragon = new Dragon("Bastien");
+        Dragon dragon1 = new Dragon();
 
-        animal1.Name();
-        animal2.Name("Bastien");
-        animal1.Move();
-        animal2.Sleep();
+        dragon.Move();
+        dragon1.Sleep();
+
+        griffin1.Sleep();
+        griffin.Move();
     }
 
 }
