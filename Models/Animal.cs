@@ -14,17 +14,15 @@ public abstract class Animal
     
     public string Rarety { get; set; }
 
+    public int Old { get; set; }
+
     public Animal()
     {
-         NameAnimal = "Enzo";
-         Rarety = "commun";
+        NameAnimal = "Enzo";
+        Rarety = "commun";
+        Old = 19;
     }
 
-    public Animal(string name, string rarety)
-    {
-        NameAnimal = name;
-        Rarety = rarety;
-    }
 
     public abstract void Moove();
 

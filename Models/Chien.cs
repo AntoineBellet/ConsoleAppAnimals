@@ -13,9 +13,11 @@ namespace ConsoleAppAnimals.Models
         
         }
 
-        public Chien(string name) 
+        public Chien(string name, string rarety, int old)
         {
             NameAnimal = name;
+            Rarety = rarety;
+            Old = old;
         }
 
         public override void Moove()
