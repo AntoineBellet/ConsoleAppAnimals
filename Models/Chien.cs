@@ -8,9 +8,17 @@ namespace ConsoleAppAnimals.Models
 {
     public class Chien : Animal 
     {
-        public Chien() : base() { }
+        public Chien() 
+        {
+        
+        }
 
-        public Chien(string name) : base(name) { }
+        public Chien(string name, string rarety, int old)
+        {
+            NameAnimal = name;
+            Rarety = rarety;
+            Old = old;
+        }
 
         public override void Moove()
         {

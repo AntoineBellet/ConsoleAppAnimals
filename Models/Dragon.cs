@@ -9,17 +9,20 @@ namespace ConsoleAppAnimals.Models;
 
 public class Dragon : Animal, IPilotage
 {
-    public Dragon() : base() { }
-
-    public Dragon(string name) : base(name) { }
+    public Dragon(string name, string rarety, int old)
+    {
+        NameAnimal = name;
+        Rarety = rarety;
+        Old = old;
+    }
 
     public override void Moove()
     {
-        Console.WriteLine($"{Name} vole de ses propres ailes !");
+        Console.WriteLine($"{NameAnimal} vole de ses propres ailes !");
     }
 
     public override void Sleep()
     {
-        Console.WriteLine($"{Name} se repose en haut de son donjon.");
+        Console.WriteLine($"{NameAnimal} se repose en haut de son donjon.");
     }
 }

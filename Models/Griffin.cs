@@ -9,18 +9,21 @@ namespace ConsoleAppAnimals.Models;
 
 public class Griffin : Animal
 {
-    public Griffin() : base() { }
-
-    public Griffin(string name) : base(name) { }
+    public Griffin(string name, string rarety, int old)
+    {
+        NameAnimal = name;
+        Rarety = rarety;
+        Old = old;
+    }
 
 
     public override void Moove()
     {
-        Console.WriteLine($"{Name} vole de ses propres ailes !");
+        Console.WriteLine($"{NameAnimal} vole de ses propres ailes !");
     }
 
     public override void Sleep()
     {
-        Console.WriteLine($"{Name} est perché !");
+        Console.WriteLine($"{NameAnimal} est perché !");
     }
 }
