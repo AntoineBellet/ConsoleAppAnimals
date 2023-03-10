@@ -26,7 +26,7 @@ class Program
             new Chien("Charlie"),
             new Chien("Snow")
 };
-        var chiens = listeChiens.Where(chien => chien.Name != "Snow").Select(chien => chien.Name);
+        var chiens = listeChiens.Where(chien => chien.NameAnimal != "Snow").Select(chien => chien.NameAnimal);
         foreach (var nomChien in chiens)
         {
             Console.WriteLine(nomChien);
